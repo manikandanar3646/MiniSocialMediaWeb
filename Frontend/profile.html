@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h2>My Profile</h2>
+        <a href="index.html">
+            Home
+        </a>
+    </nav>
+
+    <main>
+        <div class="profile-card">
+            <h2>My Profile</h2>
+            <p>
+                User ID:
+                <span id="userId"></span>
+            </p>
+            <label>Username</label>
+            <input
+                id="profileUsername">
+            <label>Email</label>
+            <input
+                id="profileEmail"
+                disabled>
+            <label>Bio</label>
+            <textarea
+                id="profileBio">
+            </textarea>
+            <button onclick="updateProfile()">
+                Update Profile
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        loadProfile();
+    </script>
+</body>
+
+</html>

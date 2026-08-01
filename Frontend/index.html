@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h2>Mini Social Media</h2>
+        <div>
+            <a href="profile.html">My Profile</a>
+            <button onclick="logout()">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- CREATE POST -->
+        <div class="create-post">
+            <h3>Create Post</h3>
+            <textarea id="postContent"
+                      placeholder="What's on your mind?">
+            </textarea>
+            <button onclick="createPost()">
+                Create Post
+            </button>
+        </div>
+
+        <!-- POSTS -->
+        <div id="posts"></div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        loadPosts();
+    </script>
+
+</body>
+
+</html>
